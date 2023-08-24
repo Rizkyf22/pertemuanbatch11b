@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+
+    <style>
+        /* 
+            margin / padding / lainnya:
+
+            margin: value; ==> value berlaku buat semua arah (atas - kanan - bawah - kiri)
+            
+            margin: value1 value2; ==> value1 (atas dan bawah); value2 (kanan dan kiri)
+            
+            margin: value1 value2 value3; ==> value1 (atas); value 2(kanan dan kiri); value3 (bawah)
+
+            margin: value1 value2 value3 value4; ==> value1 (atas); value 2(kanan); value3 (bawah); value4 (kiri)
+
+        */
+        #kotak-1 {
+            background: powderblue;
+            color: red;
+            width: 300px;
+            height: 250px;
+            margin: 50px; 
+            padding: 30px;
+
+            /* 
+                width: 300px + 20px + 20px ==> 340px
+            */
+
+            box-sizing: border-box; /* mempertahankan lebar agar tetap 300px */
+
+        }
+        #kotak-2 {
+            background: gold;
+            color: black;
+            width: 400px;
+            height: 150px;
+            margin: 25px 100px; 
+            padding: 10px 35px;
+        }
+        #kotak-3 {
+            background: blue;
+            color: white;
+            width: 200px;
+            height: 200px;
+            margin: auto; /* menyesuaikan terhadap lebar dari container */
+            padding: 1em;
+        }
+        
+        #kotak-4 {
+            background: red;
+            color: yellow;
+            width: 300px;
+            height: 150px;
+            margin: 100px 50px 75px 400px; 
+            /* atau
+                margin-top: 100px;
+                margin-right: 50px;
+                margin-bottom: 75px;
+                margin-left: 400px;
+            */
+            padding: 10px 15px 50px 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="kotak-1">
+        <h3>Judul Kotak 1</h3>
+        <p>Isi Kotak 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam tempora, eligendi doloremque enim ab odio porro blanditiis fugit. Assumenda ratione, harum quos natus expedita incidunt libero aut qui doloremque ea.</p>
+    </div>
+    <div id="kotak-2">
+        <h3>Judul Kotak 2</h3>
+        <p>Isi Kotak 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam tempora, eligendi doloremque enim ab odio porro blanditiis fugit. Assumenda ratione, harum quos natus expedita incidunt libero aut qui doloremque ea.</p>
+    </div>
+    <div id="kotak-3">
+        <h3>Judul Kotak 3</h3>
+        <p>Isi Kotak 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam tempora, eligendi doloremque enim ab odio porro blanditiis fugit. Assumenda ratione, harum quos natus expedita incidunt libero aut qui doloremque ea.</p>
+    </div>
+    <div id="kotak-4">
+        <h3>Judul Kotak 4</h3>
+        <p>Isi Kotak 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam tempora, eligendi doloremque enim ab odio porro blanditiis fugit. Assumenda ratione, harum quos natus expedita incidunt libero aut qui doloremque ea.</p>
+    </div>
+</body>
+</html>

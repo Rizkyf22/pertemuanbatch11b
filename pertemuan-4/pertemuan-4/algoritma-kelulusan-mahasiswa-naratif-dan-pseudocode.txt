@@ -1,0 +1,50 @@
+Notasi Algoritma
+
+1. Naratif / Deskriptif / Natural   ==> kalimat-kalimat naratif / deskriptif 
+2. Diagram Alir / Flowchart Diagram ==> gambar diagram 
+3. Pseudo-code                      ==> kode semu ==> paling dekat ke bahasa pemrograman
+
+Algoritma Kelulusan Mahasiswa 
+
+Kasus / Masalah:
+Diberikan nama dan nilai mahasiswa, jika nilai tersebut lebih besar atau sama dengan 60 maka mahasiswa tersenut dinyatakan lulus, jika nilai lebih kecil dari  60 maka dinyatakan tidak lulus.
+
+Naratif / Deskriptif
+1. Mulai 
+2. Input Nama dan nilai mahasiswa 
+3. Proses perhitungan nilai. Jika nilai >= 60, maka "Lulus". Jika nilai < 60, maka "Tidak Lulus"
+4. Tampilkan hasil kelulusan
+5. Selesai
+
+Diagram Flowchart (Lihat hasil tadi)
+
+Pseudo-code / Kode semu:
+Program_Kelulusan_Mahasiswa
+
+// Deklarasi variabel
+nama, status : string 
+nilai : float  
+
+MULAI 
+
+    // Input
+    tampilkan("Masukkan nama: ");
+    input(nama);
+    
+    tampilkan("Masukkan nilai: ");
+    input(nilai);
+
+    // Proses
+    IF (nilai >= 60) THEN 
+        status = "Lulus"
+    ELSE 
+        status = "Tidak Lulus"
+    END IF
+    
+    // Output
+    tampilkan("Nama : " + nama)
+    tampilkan("Nilai : " + nilai)
+    tampilkan("Status Kelulusan : " + status)
+
+
+SELESAI 

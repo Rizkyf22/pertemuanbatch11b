@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Tabel</title>
+</head>
+<body>
+    <h1>Membuat Tabel</h1>
+
+    <!-- 
+        format:
+        <table>
+            <tr>
+                <td>konten 1</td>
+                <td>konten 2</td>
+            </tr>
+        </table>
+
+        th ==> membuat kolom judul di tabel ==> tebal dan rata tengah
+        tr ==> membuat baris            ==> ke bawah
+        td ==> membuat cell / kolom     ==> ke samping
+        dari kiri ke kanan dan dari atas ke bawah
+
+        manipulasi cell:
+        colspan ==> menggabung kolom ==> gabung ke samping
+        rowspan ==> menggabung baris ==> gabung ke bawah
+
+     -->
+
+     <table border="1" cellpadding="5" cellspacing="0">
+        <!-- baris pertama -->
+        <tr>
+            <th rowspan="2">No.</th>
+            <th colspan="2">Nama</th>
+            <th rowspan="2">Alamat</th>
+        </tr>
+        
+        <!-- baris kedua -->
+        <tr>
+            <th>Depan</th>
+            <th>Belakang</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Muhammad</td>
+            <td>Ferari</td>
+            <td>Jakarta</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Beckham</td>
+            <td>Putra Nugraha</td>
+            <td>Bandung</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Egy</td>
+            <td>Maulana Vikry</td>
+            <td>Medan</td>
+        </tr>
+     </table>
+
+</body>
+</html>

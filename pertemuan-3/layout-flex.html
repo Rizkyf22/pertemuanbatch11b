@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Float</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #8fcbff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+        }
+
+        #sidebar {
+            flex: 1;
+        }
+
+        #content {
+            flex: 3;
+        }
+
+        #sidebar2 {
+            flex: 1;
+        }
+        
+        footer {
+            background-color: black;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            margin-top: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h2>PT ABC Indonesia</h2>
+    </header>
+
+    <main>
+
+        <section id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 3</a></li>
+                    <li><a href="#">Menu 4</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="content">
+            <h3>Artikel 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ullam expedita deleniti neque blanditiis impedit enim! Excepturi praesentium maxime, quibusdam fugiat laborum eum eveniet tempora ducimus, veritatis, ullam est minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis adipisci ad sint harum quas placeat. Iusto voluptas voluptatibus dolores, placeat quas ab culpa laboriosam sequi iste, temporibus voluptate doloribus sapiente.</p>
+        </section>
+
+        <section id="sidebar2">
+            <nav>
+                <ul>
+                    <li><a href="#">Menu a</a></li>
+                    <li><a href="#">Menu b</a></li>
+                    <li><a href="#">Menu c</a></li>
+                    <li><a href="#">Menu d</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; Copyright 2023. All Rights Reserved.
+    </footer>
+</body>
+</html>

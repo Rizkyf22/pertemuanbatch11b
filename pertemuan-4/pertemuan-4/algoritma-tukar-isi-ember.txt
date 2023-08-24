@@ -1,0 +1,34 @@
+Diberikan 2 buah ember A dan B, ember A berisi larutan berwarna merah, ember B berisi larutan berwarna biru. Tukarkan isi kedua ember itu sedemikian  sehingga ember A berisi larutan warna biru dan ember B berisi larutan berwarna merah.
+
+Pseudo-code: 
+
+Program_Tukar_Isi_Ember
+
+// Deklarasi variabel 
+A, B, C : string 
+
+// Assignment / pemberian nilai
+A <-- "merah"
+B <-- "biru"
+C <-- ""
+
+MULAI 
+
+    // pindahkan isi A ke C 
+    C <-- A                         // A = "merah"; B = "biru"; C = "merah"
+
+    // pindahkan isi B ke A 
+    A <-- B                         // A = "biru"; B = "biru"; C = "merah"
+
+    // pindahkan isi C ke B 
+    B <-- C                         // A = "biru"; B = "merah"; C = "merah"
+
+    // kosongkan isi C 
+    C <-- ""
+
+    tampilkan("A: " + A)
+    tampilkan("B: " + B)
+    tampilkan("C: " + C)
+
+SELESAI 
+

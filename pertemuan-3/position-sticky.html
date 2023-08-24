@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Static</title>
+    <style>
+        .container {
+            background-color: orange;
+            width: 400px;
+            height: auto;
+            padding: 10px;
+            margin: auto;
+        }
+        .style-display {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #kotak1, #kotak2, #kotak3 {
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border: solid 5px black;
+            border-radius: 5px;
+            width: 300px;
+            height: 50px;
+            margin: 5px;
+        }
+
+
+        #kotak2 {
+            border: solid 10px blue;
+            position: sticky;
+            top: 0px;
+            /* 
+                position sticky: 
+                    bisa atur top, right, bottom, left, dan z-index
+            */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container style-display">
+        <div id="kotak1" class="style-display">Kotak 1</div>
+        <div id="kotak2" class="style-display">Kotak 2</div>
+        <div id="kotak3" class="style-display">Kotak 3</div>
+        <div id="kotak1" class="style-display">Kotak 1</div>
+        <div id="kotak2" class="style-display">Kotak 2</div>
+        <div id="kotak3" class="style-display">Kotak 3</div>
+        <div id="kotak1" class="style-display">Kotak 1</div>
+        <div id="kotak2" class="style-display">Kotak 2</div>
+        <div id="kotak3" class="style-display">Kotak 3</div>
+        <div id="kotak1" class="style-display">Kotak 1</div>
+        <div id="kotak2" class="style-display">Kotak 2</div>
+        <div id="kotak3" class="style-display">Kotak 3</div>
+        <div id="kotak1" class="style-display">Kotak 1</div>
+        <div id="kotak2" class="style-display">Kotak 2</div>
+        <div id="kotak3" class="style-display">Kotak 3</div>
+        <div id="kotak1" class="style-display">Kotak 1</div>
+        <div id="kotak2" class="style-display">Kotak 2</div>
+        <div id="kotak3" class="style-display">Kotak 3</div>
+    </div>
+</body>
+</html>

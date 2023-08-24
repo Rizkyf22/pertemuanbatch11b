@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat List / Daftar</title>
+</head>
+<body>
+    <h1>Membuat List / Daftar</h1>
+
+    <!--
+        List ==> bullets and numbering
+
+        1. Ordered List ==> ol
+            1.. 2.. 3..
+            a.. b.. c..
+            i.. ii.. iii..
+            format:
+                <ol>
+                    <li>konten 1</li>
+                    <li>konten 2</li>
+                </ol>
+
+
+        2. Unordered List ==> ul
+            lingkaran, persegi
+            format: 
+                <ul>
+                    <li>konten 1</li>
+                    <li>konten 2</li>
+                </ul>
+
+
+     -->
+
+    <h1>Ordered List default dengan angka</h1>
+    <h2>Yang harus dilakukan hari ini:</h2>
+     <ol>
+        <li>Diam di rumah</li>
+        <li>Buat tutorial HTML</li>
+        <li>Mengerjakan tugas</li>
+     </ol>
+    
+     <h1>Ordered List dimulai dengan angka tertentu (bukan dari 1)</h1>
+    <h2>Yang harus dilakukan hari ini:</h2> <!-- atribut start="nilai" -->
+     <ol start="22">
+        <li>Diam di rumah</li>
+        <li>Buat tutorial HTML</li>
+        <li>Mengerjakan tugas</li>
+     </ol>
+     
+    <h1>Ordered List dimulai dengan huruf kecil</h1>
+    <h2>Yang harus dilakukan hari ini:</h2> <!-- atribut type="a" -->
+     <ol type="a">
+        <li>Diam di rumah</li>
+        <li>Buat tutorial HTML</li>
+        <li>Mengerjakan tugas</li>
+     </ol>
+    
+    <h1>Ordered List dimulai dengan huruf kapital</h1>
+    <h2>Yang harus dilakukan hari ini:</h2> <!-- atribut type="A" -->
+     <ol type="A">
+        <li>Diam di rumah</li>
+        <li>Buat tutorial HTML</li>
+        <li>Mengerjakan tugas</li>
+     </ol>
+
+     <h1>Ordered List dimulai dengan angka romawi kecil</h1>
+     <h2>Yang harus dilakukan hari ini:</h2> <!-- atribut type="i" -->
+     <ol type="i">
+        <li>Diam di rumah</li>
+        <li>Buat tutorial HTML</li>
+        <li>Mengerjakan tugas</li>
+     </ol>
+
+     <h1>Ordered List dimulai dengan angka romawi besar</h1>
+     <h2>Yang harus dilakukan hari ini:</h2> <!-- atribut type="I" -->
+     <ol type="I">
+        <li>Diam di rumah</li>
+        <li>Buat tutorial HTML</li>
+        <li>Mengerjakan tugas</li>
+     </ol>
+
+     <hr/>
+     <h1>Unordered List dengan lingkaran warna hitam (default)</h1>
+     <h2>Yang harus dilakukan hari ini:</h2> 
+     <ul>
+        <li>Diam di rumah</li>
+        <li>Buat tutorial HTML</li>
+        <li>Mengerjakan tugas</li>
+     </ul>
+
+     <h1>Unordered List dengan lingkaran warna putih</h1>
+     <h2>Yang harus dilakukan hari ini:</h2> 
+     <ul style="list-style-type: circle;">
+        <li>Diam di rumah</li>
+        <li>Buat tutorial HTML</li>
+        <li>Mengerjakan tugas</li>
+     </ul>
+
+     <h1>Unordered List dengan persegi</h1>
+     <h2>Yang harus dilakukan hari ini:</h2> 
+     <ul style="list-style-type: square;">
+        <li>Diam di rumah</li>
+        <li>Buat tutorial HTML</li>
+        <li>Mengerjakan tugas</li>
+     </ul>
+
+     <hr/>
+
+    <h1>Nested List / Daftar Bersarang / List di dalam List</h1>
+     <h2>Yang harus dilakukan hari ini:</h2>
+    <ol>
+        <li>
+            Diam di rumah
+            <ul>
+                <li>Santai</li>
+                <li>
+                    Belajar
+                    <ol type="a">
+                        <li>Website</li>    
+                        <li>HTML</li>    
+                    </ol>
+                </li>
+                <li>Cuci Tangan</li>
+            </ul>
+        </li>
+        <li>Buat tutorial HTML</li>
+        <li>Mengerjakan PR Sekolah</li>
+    </ol>
+
+
+</body>
+</html>

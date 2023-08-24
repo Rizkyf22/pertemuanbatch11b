@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector CSS</title>
+
+    <!-- menambahkan internal css -->
+    <style>
+        h1 {
+            color: red;
+            background: blue;
+        }
+
+        #h1-kedua {
+            color: blue;
+            background: yellow;
+        }
+
+        .h2-grenyellow {
+            color: greenyellow;
+            background: red;
+        }
+
+        /* hanya untuk tag h1 di dalam class artikel */
+        .artikel h1 {
+            color: orange;
+            background-color: black;
+            font-size: 20px;
+        }
+
+        /* 
+            komentar lebih dari 1 baris
+         */
+ 
+    </style>
+
+</head>
+<body>
+    <!-- 
+        css ==> bahasa style sheet / rule-based 
+
+        tag => tidak punya visual / tampilan 
+        - div
+        - header
+        - aside
+        - main
+        - footer
+        - section
+        - span
+
+        format CSS:
+
+        selector {
+            property1: value1;
+            property2: value2;
+        }
+
+        selector: 
+        - tag HTML (tanpa tanda <..>)
+        - nama_id ==> #
+        - nama_class ==> .
+
+        cara penulisan css:
+        1. internal css ==> di dalam tag head
+        2. external css ==> di file css terpisah / ekstensi css
+        3. inline css ==> menempel di tag html ==> atribut style = "property1: value1; property2: value2;"
+
+        =================
+
+        ID (#) ==> bersifat unik ==> hanya boleh 1 x ==> hanya boleh ada 1 id dengan nama tersebut
+        Class (.) ==> boleh digunakan berkali-kali / lebih dari 1 ==> hanya boleh ada 1 id dengan nama tersebut
+
+     -->
+
+    <h1>Selamat datang di CSS!</h1>
+    <h2>Ini h2 pertama</h2>
+    
+    <h1 id="h1-kedua">Selamat datang di CSS Lagi..!</h1>
+    <h2 class="h2-greenyellow">Ini h2 kedua</h2>
+    
+    <h1>Selamat datang di CSS Lagi..! (2)</h1>
+    <h2 class="h2-greenyellow">Ini h2 ketiga</h2>
+
+    <div class="artikel">
+        <h1>Judul Artikel</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eligendi officia sunt quia fuga, saepe nam? Fugiat laudantium magni blanditiis amet officia facere aperiam, beatae illo distinctio, autem fuga ratione?</p>
+    </div>
+
+    <!-- inline css -->
+    <h1 style="color: green; background: silver; text-transform: uppercase;">Judul Artikel Ke-2</h1>
+
+    
+</body>
+</html>
